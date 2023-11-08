@@ -11,6 +11,17 @@
   "rules": {
     "indent": "off",
     "linebreak-style": ["error", "unix"],
+    "eqeqeq": ["error", "always"],
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "Identifier[name=/^$/]",
+        "message": "Using \"$\" in variable names is disallowed."
+      }
+    ],
+    "no-plusplus": "error",
     "quotes": [
       "error",
       "double",

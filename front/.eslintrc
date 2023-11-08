@@ -23,6 +23,18 @@
       { "avoidEscape": true, "allowTemplateLiterals": true }
     ],
     "semi": ["error", "never"],
+    "eqeqeq": ["error", "always"],
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "Identifier[name=/^$/]",
+        "message": "Using \"$\" in variable names is disallowed."
+      }
+    ],
+    "no-plusplus": "error",
+
     "no-console": "error",
     "no-implicit-globals": "error",
     "no-warning-comments": ["error", { "terms": ["fixme", "todo"] }],
