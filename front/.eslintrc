@@ -25,7 +25,7 @@
     "semi": ["error", "never"],
     "eqeqeq": ["error", "always"],
     "no-var": "error",
-    "prefer-const": "error",
+    "prefer-const": ["error", { "destructuring": "all" }],
     "no-restricted-syntax": [
       "error",
       {
@@ -34,7 +34,6 @@
       }
     ],
     "no-plusplus": "error",
-
     "no-console": "error",
     "no-implicit-globals": "error",
     "no-warning-comments": ["error", { "terms": ["fixme", "todo"] }],
@@ -50,6 +49,27 @@
         "next": "*"
       }
     ],
+    "camelcase": "error",
+    "no-unused-vars": "error",
+    "complexity": ["error", { "max": 10 }],
+    "max-depth": ["error", 4],
+    "max-lines-per-function": ["error", { "max": 50 }],
+    "max-params": ["error", 3],
+    "no-magic-numbers": ["error", { "ignore": [-1, 0, 1] }],
+    "no-process-env": "error",
+    "no-inline-comments": "error",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "prefer-arrow-callback": "error",
+    "prefer-template": "error",
+    "consistent-return": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],

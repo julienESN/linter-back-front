@@ -13,7 +13,7 @@
     "linebreak-style": ["error", "unix"],
     "eqeqeq": ["error", "always"],
     "no-var": "error",
-    "prefer-const": "error",
+    "prefer-const": ["error", { "destructuring": "all" }],
     "no-restricted-syntax": [
       "error",
       {
@@ -39,37 +39,29 @@
       {
         "blankLine": "always",
         "prev": "*",
-        "next": [
-          "break",
-          "case",
-          "cjs-export",
-          "class",
-          "continue",
-          "do",
-          "if",
-          "switch",
-          "try",
-          "while",
-          "return"
-        ]
-      },
-      {
-        "blankLine": "always",
-        "prev": [
-          "break",
-          "case",
-          "cjs-export",
-          "class",
-          "continue",
-          "do",
-          "if",
-          "switch",
-          "try",
-          "while",
-          "return"
-        ],
         "next": "*"
       }
-    ]
+    ],
+    "camelcase": "error",
+    "no-unused-vars": "error",
+    "complexity": ["error", { "max": 10 }],
+    "max-depth": ["error", 4],
+    "max-lines-per-function": ["error", { "max": 50 }],
+    "max-params": ["error", 3],
+    "no-magic-numbers": ["error", { "ignore": [-1, 0, 1] }],
+    "no-process-env": "error",
+    "no-inline-comments": "error",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "prefer-arrow-callback": "error",
+    "prefer-template": "error",
+    "consistent-return": "error"
   }
 }
